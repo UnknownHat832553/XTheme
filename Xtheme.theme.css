@@ -1,0 +1,71 @@
+/* ปรับปรุงธีม Dark */
+:root {
+    --darkplus-bg: #181818; /* เปลี่ยนเป็นสีดำที่เข้มขึ้น */
+    --darkplus-bg2: #282828; /* สีพื้นหลังที่สอง */
+    --darkplus-sec: #bb86fc; /* สีหลัก */
+    --darkplus-links: #cdaef3; /* สีลิงก์ */
+    --darkplus-text: #e0e0e0; /* สีข้อความ */
+    --darkplus-hover: #9b59b6; /* สีเมื่อ hover */
+    --darkplus-border: #444; /* สีเส้นขอบ */
+  }
+  
+  /* ปรับปรุงพื้นหลังและองค์ประกอบต่าง ๆ */
+  body, .container, .sidebar, .content {
+    background-color: var(--darkplus-bg);
+    color: var(--darkplus-text);
+  }
+  
+  /* ปรับแต่งปุ่มให้ดูสวยงามขึ้น */
+  button {
+    background-color: var(--darkplus-sec);
+    color: var(--darkplus-bg);
+    border-radius: 8px;
+    padding: 10px 15px;
+    transition: background 0.3s ease-in-out;
+  }
+  button:hover {
+    background-color: var(--darkplus-hover);
+  }
+  
+  /* ปรับปรุงลิงก์ */
+  a {
+    color: var(--darkplus-links);
+    text-decoration: none;
+  }
+  a:hover {
+    color: var(--darkplus-hover);
+  }
+  
+  /* เพิ่มฟีเจอร์: เงาและขอบโค้งมน */
+  .card {
+    background-color: var(--darkplus-bg2);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* เพิ่มแอนิเมชันให้กับ Avatar */
+  .avatar {
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+  }
+  .avatar:hover {
+    transform: rotate(360deg) scale(1.1);
+  }
+  
+  /* ปรับปรุง Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--darkplus-sec);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--darkplus-bg);
+  }
+  
